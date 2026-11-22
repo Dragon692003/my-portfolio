@@ -1,0 +1,94 @@
+
+/* 1. General page styling */
+body {
+    background-color: #F8FAFC;
+    font-family: Arial, sans-serif;
+}
+
+/* 2. Main heading */
+h1 {
+    color: blue;
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* 3. Paragraphs */
+p {
+    color: green;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* 4. Other headings */
+h2 {
+    font-size: 22px;
+}
+
+/* 5. Header and footer */
+header {
+    background-color: #1E293B;
+    color: white;
+}
+
+footer {
+    background-color: #1E293B;
+    color: white;
+}
+
+/* 6. Portfolio sections */
+#about {
+    background-color: #EFF6FF;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid blue;
+}
+
+#skills {
+    background-color: #F0FDF4;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+#projects {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+#contact {
+    background-color: #FFF7ED;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* 7. Navigation using Flexbox */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+#projects {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+}
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.project-container article {
+    background-color: #EFF6FF;
+    padding: 20px;
+    border: 1px solid #CBD5E1;
+    border-radius: 10px;
+}
+/* Mobile screen styling */
+@media (max-width: 600px) {
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+}
